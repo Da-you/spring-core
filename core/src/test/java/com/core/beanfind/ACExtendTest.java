@@ -67,16 +67,16 @@ public class ACExtendTest {
         }
     }
 
-@Configuration
-static class TestConfig {
-    @Bean
-    public DiscountPolicy fixDiscountPolicy() {
-        return new FixDiscountPolicy();
-    }
+    @Configuration
+    static class TestConfig {
+        @Bean
+        public DiscountPolicy fixDiscountPolicy() {
+            return new FixDiscountPolicy();
+        }
 
-    @Bean
-    public DiscountPolicy rateDiscountPolicy() {
-        return new RateDiscountPolicy();
+        @Bean
+        public DiscountPolicy rateDiscountPolicy() {
+            return new RateDiscountPolicy();
+        }
     }
-}
 }
